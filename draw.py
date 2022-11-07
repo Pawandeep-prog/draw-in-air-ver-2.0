@@ -67,9 +67,9 @@ while True:
             x,y = j.ravel()
             a, b = i.ravel()
 
-            cv2.line(mask, (a,b), (x, y), color, 15)
+            cv2.line(mask, (int(a),int(b)), (int(x), int(y)), color, 15)
 
-    cv2.circle(new_frm, (x,y), 3, (255,255,0), 2)
+    cv2.circle(new_frm, (int(x),int(y)), 3, (255,255,0), 2)
 
 
     
